@@ -52,6 +52,6 @@ Para Saber se deu certo a instalação, execute o seguinte comando:
 
 ## Autor
 
-[Vanderson Mantovani](https://vandermantovani.com)
+[Vanderson Mantovani](http://vandermantovani.com)
 
 
