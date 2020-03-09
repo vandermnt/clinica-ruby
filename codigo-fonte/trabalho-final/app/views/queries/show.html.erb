@@ -1,0 +1,36 @@
+<div id="alinhaTabela">
+  <br>
+  <h2> Dados da Consulta </h2>
+  <br>
+  <div class="row">
+    <div class="form-group col-lg-5">
+      <strong>Data - Hora:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @query.date.strftime("%d/%m/%Y - %H:%M") %>" disabled>
+    </div>
+
+    <div class="form-group col-lg-3">
+      <strong>Status:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @query.status %>" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-lg-3">
+      <strong>Observação:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @query.note %>" disabled>
+    </div>
+
+    <div class="form-group col-lg-3">
+      <strong>Paciente:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @query.patient["name"] %>" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-lg-5">
+      <strong>Especialista:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @query.specialist["name"] %>" disabled>
+    </div>  </div>
+
+        <%= link_to 'Editar', edit_query_path(@query), class: "btn btn-primary" %>
+        <%= link_to 'Voltar', queries_path, class: "btn btn-primary" %>
+      </div>
+<br>

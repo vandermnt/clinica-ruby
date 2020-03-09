@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-11-27 06:42:14
+  status: MyString
+  note: MyString
+  patient: one
+  specialist: one
+
+two:
+  date: 2018-11-27 06:42:14
+  status: MyString
+  note: MyString
+  patient: two
+  specialist: two

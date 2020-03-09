@@ -1,0 +1,34 @@
+<div id="alinhaTabela"><br>
+  <div class="row">
+    <%= image_tag("/img/especialista.png") %>
+    <div style="margin-top: 40px">
+      <h1 id="p">Especialistas</h1>
+    </div>
+  </div>
+  <br>
+  <table class="table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Telefone</th>
+      <th>Especialidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @specialists.each do |specialist| %>
+      <tr>
+        <td><%= specialist.name %></td>
+        <td><%= specialist.phone %></td>
+        <td><%= specialist.specialty["name"] %></td>
+        <td><%= link_to 'Editar', edit_specialist_path(specialist) %></td>
+        <td><%= link_to 'Deletar', specialist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Cadastrar Especialista', new_specialist_path, class: 'btn btn-success' %>

@@ -1,0 +1,45 @@
+<div id="alinhaTabela">
+  <br>
+  <h2 id="p"> Dados do Paciente </h2>
+  <br>
+  <div class="row">
+    <div class="form-group col-lg-5">
+      <strong>Nome:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @patient.name %>" disabled>
+    </div>
+
+    <div class="form-group col-lg-3">
+      <strong>CPF:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @patient.cpf %>" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-lg-3">
+      <strong>Data Nascimento:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @patient.age.strftime("%d/%m/%Y")  %>" disabled>
+    </div>
+
+    <div class="form-group col-lg-3">
+      <strong>Telefone:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @patient.telefone %>" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-lg-5">
+      <strong>E-mail:</strong>
+      <input type="text" class="form-control" name="endereco" value="<%= @patient.email %>" disabled>
+    </div>  </div>
+
+    <div class="row">
+      <div class="form-group col-lg-5">
+        <strong>Endereço:</strong>
+        <input type="text" class="form-control" name="endereco" value="<%= @patient.address %>" disabled>
+      </div>  </div>
+      <div class="row">
+        <div class="form-group col-lg-5">    <strong>Profissão:</strong>
+          <input type="text" class="form-control" name="endereco" value="<%= @patient.profession %>" disabled>
+        </div>  </div>
+        <%= link_to 'Editar', edit_patient_path(@patient), class: "btn btn-primary" %>
+        <%= link_to 'Voltar', patients_path, class: "btn btn-primary" %>
+      </div>
+<br>

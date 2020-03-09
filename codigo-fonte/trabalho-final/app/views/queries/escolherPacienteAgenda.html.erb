@@ -1,0 +1,13 @@
+<div id="alinhaTabela"> <br>
+
+  <h1 id="p"> Escolha o Paciente </h1>
+
+  <%= form_tag("/agenda_paciente", method: "post") do %>
+
+  <div class="form-group">
+    <%= collection_select(:paciente, :id, Patient.all, :id, :name, :class => "form-control") %>
+  </div>
+  <%= submit_tag 'Visualizar Agenda', :class => "btn btn-primary btn-lg btn-block" %>
+  <% end %>
+
+</div>

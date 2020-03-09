@@ -1,0 +1,29 @@
+<div id="alinhaTabela">
+  <br>
+  <div align="center">
+
+    <h2>Entrar</h2> <br>
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :email,
+      required: false,
+      autofocus: true, label: false,
+      input_html: { autocomplete: "email", class: 'class="form-group col-lg-3', placeholder: "E-mail"} %>
+      <%= f.input :password,
+      required: false, label: false,
+      input_html: { autocomplete: "current-password", class: 'class="form-group col-lg-3', placeholder: "Senha" } %>
+      <div class="form-group" style="margin-left: -14%">
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      </div>
+      <div class="form-group" style="margin-left: -12%">
+        <%= render "devise/shared/links" %>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Entrar", class: "btn btn-success btn-lg" %>
+    </div>
+    <% end %>
+
+  </div>
+</div>

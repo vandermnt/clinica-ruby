@@ -1,0 +1,38 @@
+<div id="alinhaTabela">
+  <br>
+  <div class="row">
+    <%= image_tag("/img/agenda.png") %>
+    <div style="margin-top: 40px">
+      <h1 id="p">Consultas</h1>
+    </div>
+  </div>
+  <br>
+  <%= link_to 'Agendar Nova Consulta', new_query_path,  class: 'btn btn-success btn-lg btn-block' %> <br> <br>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>DATA - HORA</th>
+        <th>STATUS</th>
+        <th>OBSERVAÇÃO</th>
+        <th>PACIENTE</th>
+        <th>ESPECIALIDADE</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @queries.each do |query| %>
+      <tr>
+        <td><%= query.date.strftime("%d/%m/%Y - %H:%M") %> </td>
+        <td><%= query.status %></td>
+        <td><%= query.note %></td>
+        <td><%= query.patient["name"] %></td>
+        <td><%= query.specialist.specialty["name"] %></td>
+        <td><%= link_to 'Editar', edit_query_path(query) %></td>
+        <td><%= link_to 'Deletar', query, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
