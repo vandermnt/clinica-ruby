@@ -1,4 +1,4 @@
-# Trabalho Final WEB3
+# Gestão Clínica
 
 O software será desenvolvido na linguagem ruby, diante do framework ruby on rails.
 
@@ -21,8 +21,7 @@ Sistema irá contar com os seguintes requisitos:
 
 * Sistema Operacional Linux;
 * Linguagem Ruby instalada junto com o framework Ruby On Rails;
-* O Software irá contar com a IDE Atom para seu desenvolvimento;
-* Ferramenta Astah, caso necessite de modelagem dos requisitos.
+* Ferramenta Astah para modelagem dos requisitos.
 * Banco de Dados Mysql. 
 
 ## Instalação
@@ -53,6 +52,6 @@ Para Saber se deu certo a instalação, execute o seguinte comando:
 
 ## Autor
 
-**Vanderson Mantovani** - [GitLab](https://gitlab.com/vmantovani/web3-201802-vanderson)
+[Vanderson Mantovani](https://vandermantovani.com)
 
 
