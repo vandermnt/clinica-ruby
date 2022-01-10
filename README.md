@@ -4,7 +4,7 @@ O software será desenvolvido na linguagem ruby, diante do framework ruby on rai
 
 ## Aplicação
 
-O software irá gerenciar a parte da gestão de consultórios clinicos. O sistema visa controlar, de modo mais eficiente, as informações sobre pacientes e consultas,
+O software irá gerenciar a gestão de consultórios clinicos. O sistema visa controlar, de modo mais eficiente, as informações sobre pacientes e consultas,
 possibilitando facilidade na hora de buscar as mesmas e também otimizar o tempo na hora de ter acesso aos dados clínicos, como dados dos pacientes, consultas e exames. 
 Sistema irá contar com os seguintes requisitos:
 
